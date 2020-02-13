@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(192, 192, 192);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+
+    grid-template-areas: 
+        "nav nav nav"
+        "contenido contenido aside"
+        "w1 w2 aside"
+        "footer footer footer"
+    ;
+}
+
+.contenedor > div,
+.contenedor nav,
+.contenedor aside,
+.contenedor footer,
+.contenedor section{
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor nav img{
+    width: 200px;
+}
+
+.contenedor nav{
+    background: rgb(79, 7, 138);
+    /* grid-column: 1/-1; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    grid-area: nav;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style: none;
+}
+
+section{
+    grid-area: contenido;
+    /* grid-column: span 2; */
+}
+
+.contenedor aside{
+    background: rgb(255, 123, 0);
+    /* grid-column: 3/4; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+    grid-area: aside;
+
+    /* grid-row: 2/4; */
+}
+
+.contenedor aside h3{
+    font-size: xx-large;
+}
+
+.contenedor aside a{
+    color: rgb(255, 255, 255);
+    font-size: large;
+}
+
+.contenedor footer{
+    /* grid-column: 1/-1; */
+    background: rgb(79, 7, 138);
+    color: white;
+
+
+    grid-area: footer;
+}
+
+.contenedor footer address{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenedor .w1{
+    background: rgb(32, 210, 255);
+    color: white;
+    height: 100px;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+    grid-area: w1;
+}
+
+.contenedor .w2{
+    background: rgb(32, 210, 255);
+    color: white;
+    height: 100px;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    grid-area: w2;
+}
+
+
+/* @media screen and (max-width: 768px){
+    .contenedor section{
+        grid-column: 1/-1;
+    }
+    .contenedor aside{
+        grid-column: 1/-1;
+        grid-row: 3;
+    }
+    .contenedor .w1{
+        grid-row: 4/5;
+        grid-column: span 2;
+    }
+} */
+
+
+
+
+@media screen and (max-width: 768px){
+    .contenedor{
+        grid-template-areas: 
+        "nav nav nav"
+        "contenido contenido contenido"
+        "aside aside aside"
+        "w1 w1 w2"
+        "footer footer footer"
+    ;
+    }
+}
