@@ -171,4 +171,9 @@ section{
     .contenedor nav img{
         width: 150px;
     }
+
+    .contenedor footer address{
+        text-align: center;
+        font-size: x-small;
+    }
 }
