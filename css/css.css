@@ -40,6 +40,13 @@ body{
     width: 200px;
 }
 
+.contenedor nav ul{
+    text-align: center;
+}
+.contenedor nav ul li{
+    margin: 10px;
+}
+
 .contenedor nav{
     background: rgb(79, 7, 138);
     /* grid-column: 1/-1; */
@@ -160,5 +167,8 @@ section{
         "w1 w1 w2"
         "footer footer footer"
     ;
+    }
+    .contenedor nav img{
+        width: 150px;
     }
 }
