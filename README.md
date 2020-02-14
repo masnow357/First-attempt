@@ -1,1 +1,1 @@
-Esto es una págino por la cuál, se expondrán mis proyectos.
+Esto es una página, en la cual, se expondrán mis proyectos.
