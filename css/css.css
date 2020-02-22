@@ -210,3 +210,22 @@ section{
 .sectionp p{
     text-align: center;
 }
+
+@media screen and (max-width: 900px){
+    .contenedorp{
+        grid-template-areas:
+        "nav nav nav nav"
+        "contenido contenido contenido contenido"
+        "aside aside aside aside"
+        "footer footer footer footer"
+    ;
+    }
+    .contenedorp nav img{
+        width: 150px;
+    }
+
+    .contenedorp footer address{
+        text-align: center;
+        font-size: x-small;
+    }
+}
