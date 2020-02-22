@@ -188,7 +188,7 @@ section{
     grid-area: aside;
 }
 
-.contenedor{
+.contenedorp{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, auto);
     grid-template-areas:
@@ -199,14 +199,14 @@ section{
 ;
 }
 
-.contenedor .asidep hr{
+.contenedorp .asidep hr{
     width: 90%;
 }
 
-.contenedor .asidep h3{
+.contenedorp .asidep h3{
     font-size: x-large;
 }
 
-section p{
+.sectionp p{
     text-align: center;
 }
