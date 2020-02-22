@@ -1,3 +1,5 @@
+/* inicio estilos index */
+
 * {
     margin: 0;
     padding: 0;
@@ -176,4 +178,35 @@ section{
         text-align: center;
         font-size: x-small;
     }
+}
+
+/* final estilos index */
+
+/* inicio estilos proyects */
+
+.asidep{
+    grid-area: aside;
+}
+
+.contenedor{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+    "nav nav nav nav"
+    "contenido aside aside aside"
+    "contenido aside aside aside"
+    "footer footer footer footer"
+;
+}
+
+.contenedor .asidep hr{
+    width: 90%;
+}
+
+.contenedor .asidep h3{
+    font-size: x-large;
+}
+
+section p{
+    text-align: center;
 }
