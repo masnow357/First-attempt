@@ -1,17 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#contenedor{
+    background: rgb(91, 255, 233);
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 30px;
+    display: grid;
+    gap: 20px;
+    
+}
+
 #display{
-    width: 200px;
-    height: 35px;
     font-size: xx-large;
     color: green;
     text-align: right;
     background-color: black;
 }
 
-.numeros , .signos{
-    width: 50px;
-    height: 50px;
+.numeros, .signos{
+    padding: 20px;
+    border: solid black 0.2px;
+    border-radius: 5px;
+    font-size: large;
 }
 
-#contenedor{
+.numeros{
+    background: gray;
+}
+
+
+#contdis{
+    display: grid;
+}
+
+#botones{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 2px;
     
+    
+
+
+    grid-template-areas: 
+    
+        "n1 n2 n3 sd sm"
+        "n4 n5 n6 sr ss"
+        "n7 n8 n9 sr ss"
+        "sc n0 si si ss"
+    
+    ;
+}
+
+#n1{
+    grid-area: n1;
+}
+
+#n2{
+    grid-area: n2;
+}
+#n3{
+    grid-area: n3;
+}
+#n4{
+    grid-area: n4;
+}
+#n5{
+    grid-area: n5;
+}
+#n6{
+    grid-area: n6;
+}
+#n7{
+    grid-area: n7;
+}
+#n8{
+    grid-area: n8;
+}
+#n9{
+    grid-area: n9;
+}
+#n0{
+    grid-area: n0;
+}
+
+#ss{
+    grid-area: ss;
+    background-color: crimson;
+    font-size: xx-large;
+}
+
+#sr{
+    grid-area: sr;
+}
+
+#sm{
+    grid-area: sm;
+}
+
+#sd{
+    grid-area: sd;
+}
+
+#si{
+    grid-area: si;
+}
+
+#sc{
+    grid-area: sc;
+}
+
+@media screen and (max-width: 900px){
+    body{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .numeros, .signos{
+        padding: 10px;
+        font-size: medium;
+    }
+
+
+    #botones{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(7, auto);
+        gap: 2px;
+        
+        
+    
+    
+        grid-template-areas: 
+        
+            "sd sm sr"
+            "ss ss ss"
+            "n1 n2 n3"
+            "n4 n5 n6"
+            "n7 n8 n9"
+            "sc n0 n0"
+            "si si si"
+        
+        ;
+    }
 }

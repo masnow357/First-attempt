@@ -7,38 +7,80 @@
     <link rel="stylesheet" href="../css/calculadora.css">
 </head>
 <body>
+    <!-- calculadora 1 -->
     <div id="contenedor">
-        <div>
-            <input id="display" type="text" value="0"></div>
+        <div id="contdis">
+            <input id="display" type="text" value="0">
         </div>
         <div id="botones">
 
             <!-- numbers -->
 
-            <button type="button" class="numeros" id="n1" onclick="mostrar(1)" >1</button>
-            <button type="button" class="numeros" id="n2" onclick="mostrar(2)" >2</button>
-            <button type="button" class="numeros" id="n3" onclick="mostrar(3)" >3</button>
-            <button type="button" class="numeros" id="n4" onclick="mostrar(4)" >4</button>
-            <button type="button" class="numeros" id="n5" onclick="mostrar(5)" >5</button>
-            <button type="button" class="numeros" id="n6" onclick="mostrar(6)" >6</button>
-            <button type="button" class="numeros" id="n7" onclick="mostrar(7)" >7</button>
-            <button type="button" class="numeros" id="n8" onclick="mostrar(8)" >8</button>
-            <button type="button" class="numeros" id="n9" onclick="mostrar(9)" >9</button>
-            <button type="button" class="numeros" id="n0" onclick="mostrar(0)" >0</button>
+                <button type="button" class="numeros" id="n1" onclick="mostrar(1)" >1</button>
+                <button type="button" class="numeros" id="n2" onclick="mostrar(2)" >2</button>
+                <button type="button" class="numeros" id="n3" onclick="mostrar(3)" >3</button>
+                <button type="button" class="numeros" id="n4" onclick="mostrar(4)" >4</button>
+                <button type="button" class="numeros" id="n5" onclick="mostrar(5)" >5</button>
+                <button type="button" class="numeros" id="n6" onclick="mostrar(6)" >6</button>
+                <button type="button" class="numeros" id="n7" onclick="mostrar(7)" >7</button>
+                <button type="button" class="numeros" id="n8" onclick="mostrar(8)" >8</button>
+                <button type="button" class="numeros" id="n9" onclick="mostrar(9)" >9</button>
+                <button type="button" class="numeros" id="n0" onclick="mostrar(0)" >0</button>
 
             <!--end numbers -->
 
             <!-- signs -->
 
-            <button type="button" class="signos" id="s+" onclick="mostrar('*')" >+</button>
-            <button type="button" class="signos" id="s-" onclick="mostrar('-')" >-</button>
-            <button type="button" class="signos" id="s*" onclick="mostrar('*')" >*</button>
-            <button type="button" class="signos" id="s/" onclick="mostrar('/')" >/</button>
+                <button type="button" class="signos" id="ss" onclick="mostrar('+')" >+</button>
+                <button type="button" class="signos" id="sr" onclick="mostrar('-')" >-</button>
+                <button type="button" class="signos" id="sm" onclick="mostrar('*')" >*</button>
+                <button type="button" class="signos" id="sd" onclick="mostrar('/')" >/</button>
+                <button type="button" class="signos" id="si" onclick="mostrar('=')" >=</button>
+                <button type="button" class="signos" id="sc" onclick="mostrar(',')" >,</button>
 
             <!-- end signs -->
 
         </div>
     </div>
+    <!-- final calculadora 1 -->
+
+    
+    <!-- calculadora 2 -->
+    <div id="contenedor">
+        <div id="contdis">
+            <input id="display" type="text" value="0">
+        </div>
+        <div id="botones">
+
+            <!-- numbers -->
+
+                <button type="button" class="numeros" id="n1" onclick="mostrar(1)" >1</button>
+                <button type="button" class="numeros" id="n2" onclick="mostrar(2)" >2</button>
+                <button type="button" class="numeros" id="n3" onclick="mostrar(3)" >3</button>
+                <button type="button" class="numeros" id="n4" onclick="mostrar(4)" >4</button>
+                <button type="button" class="numeros" id="n5" onclick="mostrar(5)" >5</button>
+                <button type="button" class="numeros" id="n6" onclick="mostrar(6)" >6</button>
+                <button type="button" class="numeros" id="n7" onclick="mostrar(7)" >7</button>
+                <button type="button" class="numeros" id="n8" onclick="mostrar(8)" >8</button>
+                <button type="button" class="numeros" id="n9" onclick="mostrar(9)" >9</button>
+                <button type="button" class="numeros" id="n0" onclick="mostrar(0)" >0</button>
+
+            <!--end numbers -->
+
+            <!-- signs -->
+
+                <button type="button" class="signos" id="ss" onclick="mostrar('+')" >+</button>
+                <button type="button" class="signos" id="sr" onclick="mostrar('-')" >-</button>
+                <button type="button" class="signos" id="sm" onclick="mostrar('*')" >*</button>
+                <button type="button" class="signos" id="sd" onclick="mostrar('/')" >/</button>
+                <button type="button" class="signos" id="si" onclick="mostrar('=')" >=</button>
+                <button type="button" class="signos" id="sc" onclick="mostrar(',')" >,</button>
+
+            <!-- end signs -->
+
+        </div>
+    </div>
+    <!-- final calculadora 2 -->
     <script src="../js/calculadora.js"></script>
 </body>
 </html>

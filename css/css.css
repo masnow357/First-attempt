@@ -18,7 +18,7 @@ body{
     grid-template-rows: repeat(4, auto);
 
 
-    grid-template-areas: 
+    grid-template-areas:
         "nav nav nav"
         "contenido contenido aside"
         "w1 w2 aside"
@@ -160,7 +160,7 @@ section{
 
 @media screen and (max-width: 768px){
     .contenedor{
-        grid-template-areas: 
+        grid-template-areas:
         "nav nav nav"
         "contenido contenido contenido"
         "aside aside aside"
