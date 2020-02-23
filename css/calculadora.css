@@ -132,6 +132,9 @@ body{
         font-size: medium;
     }
 
+    #sd2{
+        grid-area: sd2;
+    }
 
     #botones{
         display: grid;
@@ -144,7 +147,7 @@ body{
     
         grid-template-areas: 
         
-            "sd sm sr"
+            "sd2 sm sr"
             "ss ss ss"
             "n1 n2 n3"
             "n4 n5 n6"
