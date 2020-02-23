@@ -18,6 +18,11 @@ body{
     
 }
 
+#contenedor #contdis{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
 #display{
     font-size: xx-large;
     color: green;
@@ -34,11 +39,6 @@ body{
 
 .numeros{
     background: gray;
-}
-
-
-#contdis{
-    display: grid;
 }
 
 #botones{
@@ -153,5 +153,11 @@ body{
             "si si si"
         
         ;
+        
+    }
+
+    #display{
+        width: 80%;
+        max-width: 1000px;
     }
 }
