@@ -2,28 +2,28 @@
     margin: 0;
     padding: 0;
 }
-body{
+/* body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-}
+} */
 
-#contenedor{
+#contenedor1{
     background: rgb(91, 255, 233);
-    width: 80%;
+    width: 30%;
     max-width: 1000px;
-    margin: 20px auto;
+    margin: 100px auto;
     padding: 30px;
     display: grid;
     gap: 20px;
     
 }
 
-#contenedor #contdis{
+#contenedor1 #contdis{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 }
 
-#display{
+#display1{
     font-size: xx-large;
     color: green;
     text-align: right;
@@ -55,7 +55,7 @@ body{
         "n1 n2 n3 sd sm"
         "n4 n5 n6 sr ss"
         "n7 n8 n9 sr ss"
-        "sc n0 si si ss"
+        "sc n0 si si ce"
     
     ;
 }
@@ -118,10 +118,28 @@ body{
     grid-area: sc;
 }
 
-@media screen and (max-width: 900px){
+#ce{
+    grid-area: ce;
+    background: rgb(60, 60, 230);
+    color: white;
+}
+
+
+@media screen and (max-width: 1150px){
     body{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, auto);
+    }
+
+    #contenedor1{
+        background: rgb(91, 255, 233);
+        width: 80%;
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 30px;
+        display: grid;
+        gap: 20px;
+        
     }
 }
 
@@ -130,10 +148,6 @@ body{
     .numeros, .signos{
         padding: 10px;
         font-size: medium;
-    }
-
-    #sd2{
-        grid-area: sd2;
     }
 
     #botones{
@@ -147,19 +161,19 @@ body{
     
         grid-template-areas: 
         
-            "sd2 sm sr"
+            "sd sm sr"
             "ss ss ss"
             "n1 n2 n3"
             "n4 n5 n6"
             "n7 n8 n9"
-            "sc n0 n0"
+            "sc n0 ce"
             "si si si"
         
         ;
         
     }
 
-    #display{
+    #display1{
         width: 80%;
         max-width: 1000px;
     }
