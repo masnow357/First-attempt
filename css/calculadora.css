@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
 }
-/* body{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-} */
+
+body{
+    background: rgb(235, 234, 234);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 #contenedor1{
     background: rgb(91, 255, 233);
@@ -15,6 +17,8 @@
     padding: 30px;
     display: grid;
     gap: 20px;
+
+    border-radius: 10px;
     
 }
 
@@ -125,6 +129,96 @@
 }
 
 
+
+/* punto aparte */
+
+.contenedornav nav img{
+    margin: auto 40px;
+    width: 70px;
+}
+
+.contenedornav nav ul{
+    text-align: center;
+}
+.contenedornav nav ul li{
+    margin: 10px;
+}
+
+.contenedornav nav{
+    background: rgb(79, 7, 138);
+    /* grid-column: 1/-1; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 10px;
+
+    grid-area: nav;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style: none;
+}
+
+
+.contenedorfoot footer{
+    /* grid-column: 1/-1; */
+    background: rgb(79, 7, 138);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+
+
+    grid-area: footer;
+}
+
+.contenedorfoot footer address{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenedornav{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
+
+
+    grid-template-areas: 
+        "nav"
+    ;
+
+
+}
+
+.contenedorfoot{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
+
+    grid-template-areas: 
+        "footer"
+    ;
+
+
+}
+
+
+/* fin del punto aparte */
+
 @media screen and (max-width: 1150px){
     body{
         grid-template-columns: repeat(1, 1fr);
@@ -176,5 +270,19 @@
     #display1{
         width: 80%;
         max-width: 1000px;
+    }
+
+    .contenedornav nav{
+        font-size: 15px;
+    }
+
+    .contenedornav nav img{
+        margin: 0;
+        width: 70px;
+    }
+
+    .contenedorfoot footer address{
+        text-align: center;
+        font-size: x-small;
     }
 }
